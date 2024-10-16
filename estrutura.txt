@@ -1,0 +1,49 @@
+Bottom Tabs:
+Home
+- Carrossel de eventos
+- Avisos
+
+Perfil
+- Dados do aluno:
+    - foto (placeholder)
+    - Nome Completo, foto, Email institucional
+    - Faculdade, curso, período
+    - RA
+    - Ciclo atual
+    - Rendimento: %PP, %PR, %PP(intercâmbio)
+    - Prazo de Integralização: Cursado, prazo máximo, quantos faltam
+
+Curso
+Menu (lista de botões):
+- Matrícula
+    - Matrícula
+- Consultas
+    - Histórico (lista/grade)
+        Obs: (Histórico parcial e completo são quase a mesma coisa, o que muda é uma coluna a mais com o total de faltas)
+    - Horário
+    - Notas Parciais
+    - Faltas Parciais
+- Agenda
+    - Calendário de provas
+- Solicitações
+    - Revisão de nota/falta/exame geral
+    - Solicitação de documentos
+    - Regime de Exercícios Domiciliares
+- Planos de Ensino 
+    - Disciplina 1
+    - Disciplina 2
+    - Disciplina 3
+    - Disciplina 4
+    - Disciplina 5
+- Matriz em Inglês
+
+Drawer:
+- Nome/foto
+- Email
+
+- Notificações
+
+- Segurança
+    - Trocar senha
+    - Trocar Email
+- Sair
