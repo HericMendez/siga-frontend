@@ -26,14 +26,16 @@ export default function CustomSwitch({ selectionMode, options, onSelectSwitch })
             activeOpacity={1}
             onPress={() => updateSwitchData(index + 1)}
             style={{
-              width: '33%', // Manter grid 3x3
+              width: "33%", // Manter grid 3x3
               marginBottom: 10,
-              backgroundColor: getSelectionMode === index + 1 ? '#b20000' : '#fff',
+
+              backgroundColor:
+                getSelectionMode === index + 1 ? "#b20000" : "#fff",
               borderRadius: 10,
-              justifyContent: 'center',
-              alignItems: 'center',
+              justifyContent: "center",
+              alignItems: "center",
               paddingVertical: 10,
-              shadowColor: '#000',
+              shadowColor: "#000",
               shadowOffset: {
                 width: 0,
                 height: 2,
@@ -43,12 +45,16 @@ export default function CustomSwitch({ selectionMode, options, onSelectSwitch })
               elevation: 5,
             }}
           >
-            <Icon name={option.icon || "home"} size={36} color={getSelectionMode === index + 1 ? 'white' : '#000'} />
+            <Icon
+              name={option.icon || "home"}
+              size={36}
+              color={getSelectionMode === index + 1 ? "white" : "#000"}
+            />
             <Text
               style={{
-                color: getSelectionMode === index + 1 ? 'white' : '#000',
+                color: getSelectionMode === index + 1 ? "white" : "#000",
                 fontSize: 14,
-                fontFamily: 'Roboto-Medium',
+                fontFamily: "Roboto-Medium",
                 textAlign: "center",
               }}
             >

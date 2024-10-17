@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import CustomHeader from "../../components/CustomHeader";
+import CustomHeader from "../../../components/CustomHeader";
 
 function HomeDetailsPage({ navigation }) {
   return (

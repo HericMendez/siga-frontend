@@ -2,7 +2,6 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import HomePage from "../pages/Home/HomePage";
 import HomeDetailsPage from "../pages/Home/HomeDetailsPage";
-
 const StackHome = createStackNavigator();
 
 function HomeStackNavigator() {

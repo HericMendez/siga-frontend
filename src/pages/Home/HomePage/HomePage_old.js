@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   View,
   Text,
@@ -6,18 +6,18 @@ import {
   ImageBackground,
   TextInput,
   TouchableOpacity,
-} from 'react-native';
+} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import Carousel from 'react-native-reanimated-carousel';
-import Feather from 'react-native-vector-icons/Feather';
+import Carousel from "react-native-reanimated-carousel";
+import Feather from "react-native-vector-icons/Feather";
 
 //import CustomHeader from "../../components/CustomHeader";
-import BannerSlider from '../../components/BannerSlider';
-import { windowWidth } from '../../utils/Dimensions';
-import CustomSwitch from '../../components/CustomSwitch';
-import ListItem from '../../components/ListItem';
-import UserProfile from '../../assets/images/user-profile.jpg';
-import { freeGames, paidGames, sliderData } from '../../model/data';
+import BannerSlider from "../../../components/BannerSlider";
+import { windowWidth } from "../../../utils/Dimensions";
+import CustomSwitch from "../../../components/CustomSwitch";
+import ListItem from "../../../components/ListItem";
+import UserProfile from "../../assets/images/user-profile.jpg";
+import { freeGames, paidGames, sliderData } from "../../../model/games";
 
 const HomePage = ({ navigation }) => {
   const [gamesTab, setGamesTab] = useState(1);
@@ -31,16 +31,16 @@ const HomePage = ({ navigation }) => {
   };
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: '#fff' }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: "#fff" }}>
       <ScrollView style={{ padding: 20 }}>
         <View
           style={{
-            flexDirection: 'row',
-            justifyContent: 'space-between',
+            flexDirection: "row",
+            justifyContent: "space-between",
             marginBottom: 20,
           }}
         >
-          <Text style={{ fontSize: 18, fontFamily: 'Roboto-Medium' }}>
+          <Text style={{ fontSize: 18, fontFamily: "Roboto-Medium" }}>
             Hello John Doe
           </Text>
           <TouchableOpacity onPress={() => navigation.openDrawer()}>
@@ -54,8 +54,8 @@ const HomePage = ({ navigation }) => {
 
         <View
           style={{
-            flexDirection: 'row',
-            borderColor: '#C6C6C6',
+            flexDirection: "row",
+            borderColor: "#C6C6C6",
             borderWidth: 1,
             borderRadius: 8,
             paddingHorizontal: 10,
@@ -74,15 +74,15 @@ const HomePage = ({ navigation }) => {
         <View
           style={{
             marginVertical: 15,
-            flexDirection: 'row',
-            justifyContent: 'space-between',
+            flexDirection: "row",
+            justifyContent: "space-between",
           }}
         >
-          <Text style={{ fontSize: 18, fontFamily: 'Roboto-Medium' }}>
+          <Text style={{ fontSize: 18, fontFamily: "Roboto-Medium" }}>
             Upcoming Games
           </Text>
-          <TouchableOpacity onPress={() => { }}>
-            <Text style={{ color: '#0aada8' }}>See all</Text>
+          <TouchableOpacity onPress={() => {}}>
+            <Text style={{ color: "#0aada8" }}>See all</Text>
           </TouchableOpacity>
         </View>
 
@@ -91,7 +91,7 @@ const HomePage = ({ navigation }) => {
           renderItem={renderBanner}
           width={windowWidth - 40} // Adjusted width prop for reanimated-carousel
           height={200} // You can specify height as well
-          style={{ alignSelf: 'center' }}
+          style={{ alignSelf: "center" }}
           loop={true}
         />
 
@@ -113,7 +113,7 @@ const HomePage = ({ navigation }) => {
               subTitle={item.subtitle}
               isFree={item.isFree}
               onPress={() =>
-                navigation.navigate('HomeDetailsPage', {
+                navigation.navigate("HomeDetailsPage", {
                   title: item.title,
                   id: item.id,
                 })
@@ -130,7 +130,7 @@ const HomePage = ({ navigation }) => {
               isFree={item.isFree}
               price={item.price}
               onPress={() =>
-                navigation.navigate('HomeDetailsPage', {
+                navigation.navigate("HomeDetailsPage", {
                   title: item.title,
                   id: item.id,
                 })
