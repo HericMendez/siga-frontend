@@ -24,7 +24,7 @@ export const styles = StyleSheet.create({
     marginBottom: 30,
   },
   registerText: {
-    color: "#AD40AF",
+    color: "#b20000",
     fontWeight: "700",
   },
 });

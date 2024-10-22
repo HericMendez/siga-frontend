@@ -1,15 +1,13 @@
 
 import React, { useState, useEffect } from 'react';
 
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, ActivityIndicator } from 'react-native';
+import { StyleSheet, Text, View, ActivityIndicator } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import DrawerNavigator from "./src/navigators/DrawerNavigator";
 import LoginPage from "./src/pages/Auth/LoginPage";
 import RegistrationPage from "./src/pages/Auth/RegistrationPage";
-import * as Font from 'expo-font';
-import AppLoading from 'expo-app-loading'; // Optional for showing a loading screen
+import * as Font from "expo-font";
 import { LogBox } from 'react-native';
 
 

@@ -6,14 +6,15 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "updates": {
+      "enabled": true
+    },
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -22,13 +23,16 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "permissions": [
-        "android.permission.DETECT_SCREEN_CAPTURE"
-      ],
+      "permissions": ["android.permission.DETECT_SCREEN_CAPTURE"],
       "package": "com.anonymous.reactnativeexpobaseapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e24042ba-bfb6-44d6-a9e5-648625db45b5"
+      }
     }
   }
 }
